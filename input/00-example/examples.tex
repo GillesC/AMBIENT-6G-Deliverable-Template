@@ -1,0 +1,88 @@
+
+\chapter{Examples for a coherent document}\label{ch:deliverable-guidelines}
+\contents{Revision done}{KUL}
+
+
+\begin{itemize}
+    \item Add yourself to the contributor list in \texttt{input/contributors.tex}
+    \item Make use of the \textbf{glossaries} package to conveniently expand abbreviations in the correct manner. The abbreviations are located in \texttt{abbr.tex}.
+    % \item Use \textbf{booktabs} (Gilles can do this in the first revision phase, if need be)
+    \item Use distinct and descriptive labels to reference figures/tables/...
+%     \item make use of short and long captions:
+% \verb_\caption[this is shown in TOC]{this is shown at figure/table.}_
+\item \textbf{British English} is preferred for EU projects.
+\item Make use of \textit{tikzplotlib} (Python),  \textit{matlab2tikz} (Matlab) or use plain old CSV to transform eps/png/pdf figures to \textbf{tikz} figures which gives us more control over the aesthetics of the figures (coherent coloring scheme, font size, font family, size,...)
+\item Try to make use of pre-defined commands to \textbf{format math notations}. These are listed in the \texttt{sty/math\_notations.tex} file. Example:
+\begin{verbatim}
+\usepackage{xifthen}
+\newcommand{\prob}[1][]{%requires xifthen package%
+\ifthenelse{\isempty{#1}}%
+      {\ensuremath{P}}%
+    {\ensuremath{P\left\(#1\right\)}}%
+}
+\newcommand{\vect}[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand{\mat}[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand{\MSE}{\mathrm{MSE}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\moddef}{\mathrm{mod}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\vecop}{\text{vec}}
+\newcommand{\CP}{L}
+\newcommand{\hddots}{\hdots}
+\newcommand*{\inC}[1]{\in\mathbb{C}^{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\expt}[1]{\mathbb{E} \left\{#1\right\}}
+\newcommand{\cn}[2]{\ensuremath{\sim\mathcal{C}\mathcal{N}\left(#1,#2\right)}}
+\end{verbatim}
+\item You can use \atkul to address a question to a certain partner. Please use your own comment command, so the referenced partner, knows who asked the question, made the remark, e.g., \nxp{has a question, \attug can you elaborate?} These definitions are located in the `sty/defs.tex' file.
+\end{itemize}
+
+\section{Using Colors}
+\subsection{Color theme of the project}
+\begin{tabular}{ll@{\hskip 4cm}l l}
+      \cellcolor{pc1}\phantom{some} &  pc1&\cellcolor{pcolor}\phantom{some} &  pcolor\\
+     \cellcolor{pc2}\phantom{some} &  pc2& \cellcolor{pcolordark}\phantom{some} &  pcolordark\\
+     \cellcolor{pc3}\phantom{some} &  pc3 & \cellcolor{pcolorlight}\phantom{some} &  pcolorlight\\
+     \cellcolor{pc4}\phantom{some} &  pc4\\ 
+     \cellcolor{pc5}\phantom{some} &  pc5\\
+     \cellcolor{pc6}\phantom{some} &  pc6\\     
+\end{tabular}
+
+\subsection{Color theme of the graphs}
+\begin{tabular}{ll@{\hskip 4cm}l l}
+      \cellcolor{color1}\phantom{some} &  color1&\cellcolor{color4}\phantom{some} &  color4\\
+     \cellcolor{color2}\phantom{some} &  color2& \cellcolor{color5}\phantom{some} &  color5\\
+     \cellcolor{color3}\phantom{some} & color3 & \cellcolor{color6}\phantom{some} &  color6\\
+\end{tabular}
+
+
+\section{Using Tikz}
+Make use of tikz whenever possible. This allows us to have coherent coloring schemes and correct scaling and naming conventions. Examples:
+
+\begin{figure}[h]
+    \centering
+    \setlength{\figurewidth}{0.8\linewidth}
+    \setlength{\figureheight}{0.3\linewidth}
+    \input{input/00-example/example-fig}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \setlength{\figurewidth}{0.6\linewidth}
+    \setlength{\figureheight}{0.3\linewidth}
+    \input{input/00-example/example-fig}
+\end{figure}
+
+\FloatBarrier%
+\section{Using abbreviations}
+
+
+
+
+
+
+
+
+
+

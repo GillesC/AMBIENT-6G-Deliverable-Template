@@ -1,0 +1,45 @@
+
+%------------------------------------------------ FONTS
+% fonts
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+%------------------------------------------------
+
+%------------------------------------------------ COLORS
+\usepackage{color}
+\usepackage[dvipsnames,svgnames, table]{xcolor}
+\input{sty/defs-color}
+%------------------------------------------------
+
+
+%------------------------------------------------ FIGURES
+\def\logo{sty/logos/Logo_Ambient6G_All_Color_Horizontal_LargeLetters.pdf}
+\def\eulogo{sty/logos/EN_Co-fundedbytheEU_RGB_POS.png}
+\def\snslogo{sty/logos/sns-logo-colour-web.png}
+
+\newlength\figureheight
+\newlength\figurewidth 
+%------------------------------------------------
+
+
+%------------------------------------------------ SECTIONS
+% coloring if section/chapters/... titles
+\usepackage{sectsty}
+\allsectionsfont{\color{pcolordark}}  
+
+\setcounter{tocdepth}{2} %Limit TOC depth, to make it easier to read
+\setcounter{secnumdepth}{3} %Increased secnumdepth for better structure
+%------------------------------------------------
+
+
+%------------------------------------------------ TABLES
+% make fontsize small in tables: adopted from https://tex.stackexchange.com/questions/639383/reduce-font-size-for-all-tables-in-my-document-inside-these-tables-there-are
+\usepackage{etoolbox}                % <---
+\AtBeginEnvironment{tabular}{\footnotesize} % <---
+\AtBeginEnvironment{tabularx}{\scriptsize}
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}} % hide a column
+%------------------------------------------------
+
+
+
+\input{sty/defs-tikz}

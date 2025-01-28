@@ -1,0 +1,93 @@
+%!TEX root = ../main.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TECHNIKON Structural Definition File
+% for deliverables
+% Version 1.0 (20/10/16)
+%
+% Created by:
+% Sandra L. Lattacher (lattacher@technikon.com)
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\bibname}{References}
+
+%----------------------------------------------------------------------------------------
+%	REQUIRED PACKAGES
+%----------------------------------------------------------------------------------------
+%------------------------------------------------
+% Fonts
+
+
+\usepackage{fancyhdr} %for constructing headers and footers, and for controlling their use
+\usepackage{vmargin} % to set various margins as well as dimensions for header/footer and page dimensions 
+\usepackage{graphicx} % Required for including images
+\usepackage{lastpage}
+\usepackage{here}
+
+\usepackage{amsmath,amssymb,bm}
+
+\usepackage{xltabular}
+\usepackage{booktabs}
+
+\usepackage{subcaption}
+\usepackage[font=small]{caption}
+%\usepackage{subfig}
+
+\usepackage{parskip}
+\usepackage{placeins}
+
+\usepackage[colorlinks=true, linkcolor=pcolordark, anchorcolor=pcolordark, citecolor=pcolordark, filecolor=pcolordark, menucolor=pcolordark, urlcolor=pcolordark]{hyperref} % Use the color defined above for all links
+
+%\usepackage[makeindex, xindy]{glossaries}
+\usepackage[xindy, nonumberlist]{glossaries}
+\makenoidxglossaries%
+%\makeglossaries%
+\loadglsentries{abbr}%
+
+
+\fancypagestyle{beginning}{%
+\fancyhead[L]{\begin{minipage}[b]{12cm}\small D\Dnum{} - \Dname\end{minipage}}
+\fancyhead[R]{\includegraphics[height=20pt]{\logo} }
+\fancyfoot[R]{\pAcronym{} D\Dnum}\cfoot{}\rfoot{Page \thepage}
+}
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{beginning}}}
+
+\renewcommand{\glossarypreamble}{\thispagestyle{beginning}}
+
+\fancypagestyle{content}{
+\fancyhead[L]{\begin{minipage}[b]{12cm}\small D\Dnum{} - \Dname\end{minipage}}
+\fancyhead[R]{\includegraphics[height=20pt]{\logo} }
+\fancyfoot[R]{\pAcronym{} D\Dnum}\cfoot{}\rfoot{Page \thepage~of \pageref*{LastPage}}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PAGE MARGINS AND SPACINGS
+%----------------------------------------------------------------------------------------
+%\pagestyle{fancy}
+\setmarginsrb{2cm}{1cm}{2cm}{2cm}{0cm}{1cm}{0cm}{1cm} 
+\setlength{\headheight}{25pt}
+\setlength{\headwidth}{\textwidth}
+\renewcommand{\footrulewidth}{0.4pt} 
+\setlength{\parindent}{0pt}
+
+% fancyhdr for titlepage
+\pagenumbering{Roman}
+
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+% bsp text
+\def\abstractexampletext{An abstract is a brief summary of a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, and is often used to help the reader quickly ascertain the paper's purpose.  An abstract is a brief summary of a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, and is often used to help the reader quickly ascertain the paper's purpose.}
+
+\def\generateTitlePage{\input{./sty/titlepage}}

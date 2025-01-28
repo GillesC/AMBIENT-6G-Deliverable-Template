@@ -1,0 +1,80 @@
+\documentclass[12pt, a4paper, oneside]{book}
+%\usepackage{minitoc}
+
+% do not toch the following files
+\input{./sty/structure}
+\input{sty/defs.tex}
+\input{sty/math_notations.tex}
+\input{sty/styling}
+
+
+
+
+%%%%%%%%%%%%%%%%%%% INTERNAL REVIEWING %%%%%%%%%%%%%%%%%%%%
+%\setlength {\marginparwidth }{2cm}
+%\usepackage[switch]{lineno} % easier for the review
+%\linenumbers
+%%%%%%%%%%%%%%%%%%% INTERNAL REVIEWING %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\pagestyle{beginning}
+
+% ---------------------------------------------------------
+% EDITOR: deliverable specific information here:
+% ---------------------------------------------------------
+\def\Dnum{5.1}
+\def\Dname{DELIVERABLE NAME}
+\def\Dtype{Demonstrator (DEC)}
+\def\WPnumber{WP5}
+\def\DueDate{31$^{\rm st}$ Dec, 2024}
+\def\SubmissionDate{9$^{\rm th}$ Dec, 2024}
+\def\ResponsibleOrg{KU Leuven}
+\def\Editor{Gilles Callebaut}
+\def\EditorsOrg{KU Leuven}
+\def\DisseminationLevel{PU}
+\def\Revision{0.00}
+\def\Abstract{This deliverable \ldots.} %define abstract here
+
+
+% ---------------------------------------------------------
+% AUTHORS: Please add/uncomment yourself to the lists:
+% ---------------------------------------------------------
+\input{input/contributors.tex}
+
+% ---------------------------------------------------------
+% EDITOR: Define Keyworks
+% ---------------------------------------------------------
+\def\keyword{experiments, testbeds, energy-neutral devices}
+
+
+
+
+% do not touch:
+\def\Contributors{}
+\def\InternalReviewers{}
+%\dominitoc% Initialization
+\generateTitlePage
+\glsresetall 
+\pagestyle{content}
+% redefine for chapter pages
+\fancypagestyle{plain}{\fancyhead[L]{\begin{minipage}[b]{12cm}\small D\Dnum{} - \Dname\end{minipage}} 
+\fancyhead[R]{\includegraphics[height=20pt]{\logo} }
+\fancyfoot[R]{\pAcronym{} D\Dnum}\cfoot{}\rfoot{Page \thepage~of \pageref*{LastPage}}}
+
+
+
+% ---------------------------------------------------------
+% AUTHORS: Include chapters, use one folder per chapter
+% ---------------------------------------------------------
+\input{input/00-example/examples}
+
+\chapter{Conclusion}\label{ch:conclusions}
+\glsresetall %keep this to re-expand abbreviations, making it easier to read only the conclusion
+
+
+\pagebreak
+\nocite{*} % remove in final version, only here to print all references
+\printbibliography[title={References}] % title to be in line with the Word template
+
+\end{document}

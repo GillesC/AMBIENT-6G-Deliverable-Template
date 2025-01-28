@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%  math notations %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xifthen}
+\newcommand{\prob}[1][]{%requires xifthen package%
+\ifthenelse{\isempty{#1}}%
+      {\ensuremath{P}}%
+    {\ensuremath{P\left\(#1\right\)}}%
+}
+\newcommand{\vect}[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand{\mat}[1]{\boldsymbol{\mathrm{#1}}}
+\newcommand{\MSE}{\mathrm{MSE}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\moddef}{\mathrm{mod}}
+\newcommand{\vecop}{\text{vec}}
+\newcommand{\CP}{L}
+\newcommand{\hddots}{\hdots}
+\newcommand*{\inC}[1]{\in\mathbb{C}^{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\expt}[1]{\mathbb{E} \left\{#1\right\}}
+\newcommand{\cn}[2]{\ensuremath{\sim\mathcal{C}\mathcal{N}\left(#1,#2\right)}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathOperator*{\indmax}{indmax}
+
+
+\newcommand{\herm}{\mathsf{H}}
+\newcommand{\transp}{\mathsf{T}}
+\newcommand{\vm}[1]{\ensuremath{\bm{#1}}}
+\newcommand{\mrm}[1]{ \mathrm{#1} }
+\newcommand{\numberScatterers}{\ensuremath{M_\mathrm{sc}}}
+\newcommand{\rcs}{\ensuremath{\sigma}}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\lognormal}{lognormal}
+
+
+\newcommand{\Ber}{\mathrm{Bernoulli}}
+\newcommand{\bd}{\mathrm{bdiag}}
+\newcommand{\LRT}[2]{%
+  \mathrel{\mathop\gtrless\limits^{#1}_{#2}}%
+}
