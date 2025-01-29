@@ -1,6 +1,9 @@
 
 This repository contains the source code (hosted on Overleaf) for the [Ambient-6G](https://ambient-6g.eu/) project.
 
+![AMBIENT_6G_Template-0](https://github.com/user-attachments/assets/a35da5aa-3052-440c-b2f6-8daa06caefeb)
+
+
 ## Bugs, features and Troubles
 If you found bugs, or have feature requests or have troubles, please use the [issues page](https://github.com/GillesC/AMBIENT-6G-Deliverable-Template/issues).
 
