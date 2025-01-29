@@ -8,4 +8,4 @@ If you found bugs, or have feature requests or have troubles, please use the [is
 
 You can download the latest version as a ZIP. 
 
-<img src="[https://media1.tenor.com/m/ofDuH0hvGh8AAAAd/so-what-do-you-think.gif](https://github.com/user-attachments/assets/bd29fc92-2450-499f-9d65-1b43b69c5c01)" width="200"/>
+<img src="https://github.com/user-attachments/assets/bd29fc92-2450-499f-9d65-1b43b69c5c01" width="400"/>
