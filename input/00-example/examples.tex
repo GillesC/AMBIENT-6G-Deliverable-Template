@@ -1,3 +1,13 @@
+\chapter{How to use this template}
+
+\begin{itemize}
+    \item Please do not touch anything in the \texttt{sty} folder. If you have any problems, or you have any feature requests, please contact Gilles Callebaut via the issue page: \url{https://github.com/AMBIENT-6G/Deliverable-Template/issues}.
+    \item All relevant information should be included in the \texttt{main.tex}.
+    \item If you think additional packages or definitions need to be included in the general template, also use the issue page or make a pull request.
+
+    \item See \cref{ch:deliverable-guidelines} for guidelines on making a coherent document using this template.
+\end{itemize}
+
 
 \chapter{Examples for a coherent document}\label{ch:deliverable-guidelines}
 \contents{Revision done}{KUL}
@@ -7,7 +17,13 @@
     \item Add yourself to the contributor list in \texttt{input/contributors.tex}
     \item Make use of the \textbf{glossaries} package to conveniently expand abbreviations in the correct manner. The abbreviations are located in \texttt{abbr.tex}.
     % \item Use \textbf{booktabs} (Gilles can do this in the first revision phase, if need be)
-    \item Use distinct and descriptive labels to reference figures/tables/...
+    \item Use distinct and descriptive labels to reference figures/tables/\ldots. 
+    \begin{itemize}
+        \item Use short descriptions in the captions if you are going to include a list of figures.
+        
+        Usage:
+        \texttt{\textbackslash caption[Short version for LoF]\{Long version to appear next to the figure\}}
+    \end{itemize}
 %     \item make use of short and long captions:
 % \verb_\caption[this is shown in TOC]{this is shown at figure/table.}_
 \item \textbf{British English} is preferred for EU projects.
@@ -35,7 +51,7 @@
 \newcommand{\expt}[1]{\mathbb{E} \left\{#1\right\}}
 \newcommand{\cn}[2]{\ensuremath{\sim\mathcal{C}\mathcal{N}\left(#1,#2\right)}}
 \end{verbatim}
-\item You can use \atkul to address a question to a certain partner. Please use your own comment command, so the referenced partner, knows who asked the question, made the remark, e.g., \nxp{has a question, \attug can you elaborate?} These definitions are located in the `sty/defs.tex' file.
+% \item You can use \atkul to address a question to a certain partner. Please use your own comment command, so the referenced partner, knows who asked the question, made the remark, e.g., \nxp{has a question, \attug can you elaborate?} These definitions are located in the `sty/defs.tex' file.
 \end{itemize}
 
 \section{Using Colors}

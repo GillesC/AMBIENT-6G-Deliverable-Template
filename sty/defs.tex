@@ -11,20 +11,8 @@
 
 % Using the TODO package to keep track of document todos. ADD "disable" to parameters to get a "clean" document
 
-\usepackage[backgroundcolor=pcolorlight!30!white,
-linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes}
-
-\usepackage[backend=biber,style=ieee, maxnames=99]{biblatex}
-\addbibresource{bib.bib}
-\AtBeginBibliography{\footnotesize}
 
 
-\usepackage[export]{adjustbox}
-\usepackage[nochapter]{vhistory}
-
-
-
-\usepackage{xifthen}
 \newcommand{\contents}[2]{\todo[inline]{%
 		\textbf{Add content:} #1
 		%\ifthenelse{\isempty{#2}}%requires xifthen
@@ -47,33 +35,14 @@ linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes}
         {\newcommand{\changes}[1]{{#1}}}%               do not highlight else
 
 
-\usepackage{tcolorbox}
+
 
 %When adding notes, nothing is added to the TODO list. Only a RED text in the document. Second argument to identify who wrote the note.
 \newcommand{\note}[2]{\textcolor{red}{\textbf{Note:} #1 [#2]}}
 %\newcommand{\note}[2]{}
 
-\usepackage{array, booktabs, xltabular} % tables
-\usepackage{tabularx}
-\usepackage{tcolorbox}
-\usepackage{bm}			% for \bm ... bold math 
-\usepackage{siunitx}    		% for \SI{}{} units
-\DeclareSIUnit{\dBm}{dBm}	% SI unit "dBm"
-\DeclareSIUnit{\eq}{eq}	    % unit "eq" (equivalent)
-\usepackage{layouts}
-\usepackage{overpic}		% for the overpic environment (annotations)
-\usepackage{fancyvrb}
-\usepackage{xspace}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{multirow}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
 
-\usepackage{float}
-\usepackage{threeparttable}
+
 
 
 
@@ -89,62 +58,6 @@ linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%% PARTNER COMMANDS %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\update}[1]{{\color{blue}[UPDATE: #1]}}
-
-
-%%%%%%%%%%%%%%%% KUL %%%%%%%%%%%%%%%
-\newcommand{\kul}[2][]{{\color{BurntOrange}[KUL #1: #2]}}
-\newcommand{\kulColor}[1]{{\color{BurntOrange} #1}}
-\newcommand{\gilles}[1]{\kul[gilles]{#1}}
-\newcommand{\atkul}{{\color{BurntOrange} @KUL}\xspace}
-
-%%%%%%%%%%%%%%%% TUG %%%%%%%%%%%%%%%
-\newcommand{\tug}[2][]{{\color{red}[TUG #1: #2]}}
-\newcommand{\tugColor}[1]{{\color{red} #1}}
-\newcommand{\tw}[1]{\tug[Thomas]{#1}}
-\newcommand{\attug}{{\color{red} @TUG}\xspace}
-
-%%%%%%%%%%%%%%%% LU %%%%%%%%%%%%%%%
-\newcommand{\lu}[2][]{{\color{LimeGreen}[LU #1: #2]}}
-\newcommand{\luColor}[1]{{\color{LimeGreen} #1}}
-\newcommand{\atlu}{{\color{LimeGreen} @LU}\xspace}
-
-
-%%%%%%%%%%%%%%%% EAB %%%%%%%%%%%%%%%
-\newcommand{\eab}[2][]{{\color{BlueGreen}[EAB #1: #2]}}
-\newcommand{\eabColor}[1]{{\color{BlueGreen} #1}}
-\newcommand{\ateab}{{\color{BlueGreen} @EAB}\xspace}
-
-%%%%%%%%%%%%%%%% LiU %%%%%%%%%%%%%%%
-\newcommand{\liu}[2][]{{\color{Maroon}[LiU #1: #2]}}
-\newcommand{\liuColor}[1]{{\color{Maroon} #1}}
-\newcommand{\atliu}{{\color{Maroon} @LiU}\xspace}
-
-%%%%%%%%%%%%%%%% NXP %%%%%%%%%%%%%%%
-\newcommand{\nxp}[2][]{{\color{NavyBlue}[NXP #1: #2]}}
-\newcommand{\nxpColor}[1]{{\color{NavyBlue} #1}}
-\newcommand{\atnxp}{{\color{NavyBlue} @NXP}\xspace}
-
-%%%%%%%%%%%%%%%% BlooLoc %%%%%%%%%%%%%%%
-\newcommand{\blooloc}[2][]{{\color{Fuchsia}[BlooLoc #1: #2]}}
-\newcommand{\bloolocColor}[1]{{\color{Fuchsia} #1}}
-\newcommand{\atblooloc}{{\color{Fuchsia} @Blooloc}\xspace}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-
-\usepackage{pdflscape} % for landscape pages with auto rotation
-\usepackage[capitalise,noabbrev]{cleveref}
-%\renewcommand{\cref}[1]{\Cref{#1}} % ensure always write in full
 
 
 
@@ -152,13 +65,10 @@ linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes}
 \newcommand{\ac}[1]{\gls{#1}} % legacy way of using abbreviations
 
 
-\usepackage{minted}
-
 \newcommand{\reviewcomment}[1]{\textcolor{ambientdarkgreen}{\textbf{Review Comment}: #1}\newline}
 
 
-\usepackage{enumitem}
-\usepackage{svg}
+
 
 %------------------------------------------------
 % naming defintions 
@@ -168,8 +78,6 @@ linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes}
 \newcommand{\ie}{\textit{i.e.},\xspace} 
 \newcommand{\eg}{\textit{e.g.},\xspace} 
 %------------------------------------------------
-
-
 
 %----------------------------------------------------------------------------------------
 %	PROJECT INFORMATION
