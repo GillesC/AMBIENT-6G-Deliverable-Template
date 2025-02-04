@@ -1,0 +1,104 @@
+% =========================================
+% Hyperlinks
+% =========================================
+\usepackage[colorlinks=true, 
+    linkcolor=pcolordark, anchorcolor=pcolordark, 
+    citecolor=pcolordark, filecolor=pcolordark, 
+    menucolor=pcolordark, urlcolor=pcolordark]{hyperref} % Colorized hyperlinks
+    
+% =========================================
+% Annotations & Notes
+% =========================================
+\usepackage[backgroundcolor=pcolorlight!30!white,
+linecolor=pcolorlight, bordercolor=pcolorlight]{todonotes} % For adding todo notes
+
+% =========================================
+% Bibliography
+% =========================================
+\usepackage[backend=biber, style=ieee, maxnames=99]{biblatex} % IEEE-style references using Biber
+\addbibresource{bib.bib} % Bibliography file
+\AtBeginBibliography{\footnotesize} % Set bibliography font size
+
+
+
+% =========================================
+% Tables
+% =========================================
+\usepackage{array, booktabs, xltabular} % Enhanced table formatting
+\usepackage{tabularx} % Flexible tables with adjustable column widths
+\usepackage{multirow} % Multi-row table cells
+\usepackage{threeparttable} % Tables with footnotes
+
+% =========================================
+% Figures & Graphics
+% =========================================
+\usepackage{graphicx} % Required for including images
+\usepackage{overpic} % Overlay text/graphics on images
+\usepackage[export]{adjustbox} % Adjust images within figure environments
+\usepackage{svg} % Support for including SVG images
+\usepackage{here} % Force figure placement at specific locations
+\usepackage{subcaption} % Subfigures with captions
+\usepackage[font=small]{caption} % Adjust caption font size
+
+% =========================================
+% Mathematics
+% =========================================
+\usepackage{amsmath, amssymb, amsthm, mathtools, bm} % Mathematical symbols & environments
+\usepackage{siunitx} % SI units formatting
+\DeclareSIUnit{\dBm}{dBm} % Define custom SI unit "dBm"
+\DeclareSIUnit{\eq}{eq} % Define custom unit "eq" (equivalent)
+
+% =========================================
+% Algorithms & Code Formatting
+% =========================================
+\usepackage{algorithm} % Floating algorithm environment
+\usepackage{algpseudocode} % Pseudocode formatting
+\usepackage{minted} % Syntax highlighting for code
+\usepackage{fancyvrb} % Enhanced verbatim environments
+
+% =========================================
+% Lists & Enumeration
+% =========================================
+\usepackage{enumitem} % Customization for lists
+
+% =========================================
+% Glossary
+% =========================================
+\usepackage[xindy, nonumberlist]{glossaries} % Glossary support with indexing
+
+
+
+% =========================================
+% Boxes & Highlighting
+% =========================================
+\usepackage{tcolorbox} % Colored and framed boxes
+
+% =========================================
+% Version History
+% =========================================
+\usepackage[nochapter]{vhistory} % Document version history
+
+% =========================================
+% Document Utilities
+% =========================================
+\usepackage{lastpage} % Reference to the last page number
+
+% =========================================
+% Graphics & Plotting
+% =========================================
+\usepackage{tikz} % Drawing & diagrams (settings in def-tikz)
+\usepackage{pgfplots} % Plots and graphs (settings in def-tikz)
+
+% =========================================
+% Page Layout & Formatting
+% =========================================
+\usepackage{fancyhdr} % Custom headers and footers
+\usepackage{vmargin} % Adjust margins, header/footer, and page dimensions
+\usepackage{parskip} % Adds vertical space between paragraphs
+\usepackage{placeins} % Prevents floats from crossing section boundaries
+\usepackage{float} % Control figure and table placement
+\usepackage{pdflscape} % Landscape pages with automatic rotation
+\usepackage[capitalise,noabbrev]{cleveref} % Intelligent cross-referencing
+\usepackage{xspace} % Handle spacing after macros
+\usepackage{xifthen} % Conditional logic for macros
+\usepackage{layouts} % Visualizing layout of text and figures
